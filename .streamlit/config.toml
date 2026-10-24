@@ -1,0 +1,11 @@
+# Streamlit 项目级配置（与 app.py 同目录，右键项目根目录运行 streamlit 时生效）
+# 作用：跳过"首次运行邮箱提示"及对 ~/.streamlit 的写入，
+#      避免在受限环境（安全软件拦截/沙箱）下启动失败。
+
+[browser]
+# 关闭使用统计与首次运行邮箱询问（配合 server.headless 可完全跳过凭据写入）
+gatherUsageStats = false
+
+[server]
+# 不自动打开浏览器、不触发邮箱激活流程；页面手动访问 http://localhost:8501
+headless = true

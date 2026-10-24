@@ -1,0 +1,23 @@
+# ===== 学习资料助理 Agent 依赖（由 AI 生成的样板依赖清单）=====
+# MCP 官方 Python SDK（2.x，MCPServer；1.x 的 FastMCP 已更名）
+mcp>=2.3.0
+pydantic>=2.5
+
+# HTTP 与网页解析（技能2：fetch_webpage）
+httpx>=0.27
+beautifulsoup4>=4.12
+
+# PDF 解析（技能1：summarize_pdf）
+PyMuPDF>=1.24
+
+# 数据查询（技能3：query_csv）
+pandas>=2.1
+
+# LLM 客户端（OpenAI 兼容接口，技能大脑）
+openai>=1.40
+
+# 演示界面
+streamlit>=1.37
+
+# 环境变量
+python-dotenv>=1.0
